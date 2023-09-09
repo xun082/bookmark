@@ -5,22 +5,23 @@ import styles from "./index.module.scss";
 
 interface BookMarkPropsType {
   content: BookMarkType;
+  className?: string;
 }
 
 const BookMarks = (props: BookMarkPropsType) => {
-  const { content } = props;
+  const { content, className = "" } = props;
   const { href, name, icon } = content;
 
   return (
     <a
-      className={styles["root"]}
+      className={`${styles["root"]} ${className}`}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       title={name}
     >
       <img className={styles["icon"]} src={icon} alt="" />
-      <div className={styles["content"]}>{name}</div>
+      <span className={styles["content"]}>{name}</span>
     </a>
   );
 };

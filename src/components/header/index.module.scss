@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  color: #000;
+  .title {
+    color: yellow;
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    gap: 0 10px;
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+    span {
+      color: #000;
+      width: auto;
+    }
+  }
+}

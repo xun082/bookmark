@@ -1,14 +1,18 @@
-import BookMarks from "./_components/bookmark/bookmark";
+import BookMarks from "@/components/bookmark";
+import Header from "@/components/header";
 import { BookMarkList } from "@/common";
 import styles from "./index.module.scss";
 
 export default function Page() {
   return (
-    <div className={styles["root"]}>
-      {BookMarkList &&
-        BookMarkList.map((item) => (
-          <BookMarks key={item.href} content={item} />
-        ))}
-    </div>
+    <main className={styles["root"]}>
+      <Header />
+      <main className={styles["bookmark"]}>
+        {BookMarkList &&
+          BookMarkList.map((item) => (
+            <BookMarks key={item.href} content={item} />
+          ))}
+      </main>
+    </main>
   );
 }
