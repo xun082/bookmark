@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  width: 150px;
+  height: 60px;
+  justify-content: space-between;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .content {
+    width: calc(100% - 25px);
+    height: 100%;
+    text-align: end;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
