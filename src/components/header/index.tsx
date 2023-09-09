@@ -6,11 +6,11 @@ import { HeaderList } from "@/common";
 
 const Header = () => {
   return (
-    <div className={styles["root"]}>
+    <header className={styles["root"]}>
       {HeaderList.map((item) => (
         <BookMarks key={item.href} content={item} className={styles["title"]} />
       ))}
-    </div>
+    </header>
   );
 };
 

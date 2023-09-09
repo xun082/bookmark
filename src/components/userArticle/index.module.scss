@@ -1,0 +1,27 @@
+.root {
+  width: 30vw;
+  padding: 12px 20px 0 20px;
+  box-sizing: border-box;
+  height: auto;
+  .aside-article {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    box-sizing: border-box;
+    .info {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+    .information {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: #000;
+      font-size: 8px;
+    }
+  }
+}

@@ -1,9 +1,10 @@
 .root {
   display: flex;
-  width: 100%;
+  width: 40vw;
   height: 60px;
   justify-content: space-between;
-  color: #000;
+  box-sizing: border-box;
+  margin: 0 auto;
   .title {
     display: flex;
     width: auto;
